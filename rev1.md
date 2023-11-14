@@ -2,10 +2,11 @@
 
 # keygenme-py
 
-We need to figure out what key_part_dynamic1_trial to get the flag. I went throught the code and found out that the check_key function takes the hexdigest of the  
-sha256 hash of b"FREEMAN" and then selects a certain character by an indexing to a certain point on that string.
+To obtain the flag, we must determine which key_part_dynamic1_trial. Examining the code, I discovered that the check_key function selects a specific character by indexing to a specific location on the string after receiving the hexdigest of the sha256 hash of "FREEMAN".
 
-Then I simply used a for loop and found out the hexdigest of the sha256 hashes of b"FREEMAN",got the characters in the given indices and printed the final key.
+
+Then use a for loop to find out the hexdigest of the sha256 hashes of b"FREEMAN" to get the characters in the given indices.
+Print the final key.
 
 
 ```
