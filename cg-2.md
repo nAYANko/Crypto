@@ -56,7 +56,7 @@ for i in range(4000):
         print(st)
         print(binascii.unhexlify(st))
 ```
-Here first we import binascii which is a binany to ascii converter the we assign the given values to n and c, followed by the root code, this is followed by a for loop which converts the root to hex, then we search for keyword pico in it print the hex format and then the ascii.
+Here first we import binascii which is a binany to ascii converter the we assign the given values to n and c, followed by the root code, this is followed by a for loop which converts the cube root of c+i*n to hex, then we search for keyword pico in it print the hex format and then the ascii.
 
 You can do this without binascii using an external converter.
 
