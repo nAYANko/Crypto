@@ -3,7 +3,7 @@ We open the file in the workspace and check the file type
 
 ` file debugger0_a `
 
-` debugger0_a: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=15a10290db2cd2ec0c123cf80b88ed7d7f5cf9ff, for GNU/Linux 3.2.0, not stripped `
+``` debugger0_a: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=15a10290db2cd2ec0c123cf80b88ed7d7f5cf9ff, for GNU/Linux 3.2.0, not stripped ```
 
 Now we know the file is an ELF 64-bit executable non stripped file, now run gdb debugger and check all functions by typing 'info functions'
 
@@ -49,7 +49,7 @@ Since we need to look into the main function we
 ` disassemble main `
 
 
-` 
+```
 Dump of assembler code for function main:
    0x0000000000001129 <+0>:	endbr64 
    0x000000000000112d <+4>:	push   %rbp
@@ -60,7 +60,7 @@ Dump of assembler code for function main:
    0x000000000000113d <+20>:	pop    %rbp
    0x000000000000113e <+21>:	ret    
 End of assembler dump.
-`
+```
 We need to find the entry in the eax register which is '0x86342'
 
 ```
