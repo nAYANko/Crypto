@@ -1,15 +1,28 @@
 # ARMssembly 0
 Here we have file which performs a variety of functions with 2 arguments, and we are asked to find the result of the code.
 
+
 I didn't understand some of this code but in the main function we need to focus on the x0 registeries,
+
+
 `ldr	x0, [x29, 32] ; argument0`
+
+
 x0 is a 64-bit register
+
+
 `add	x0, x0, 8 ; this increments the argument0 by 8bytes we call it argument1`
+
 
 ` ldr	x0, [x0] ; this loads the x0 value into the x0 register which is a string, x0= "4110761777" `
 
+
 In the past, it runs atoi which converts ascii to integer as in it makes the string in x0 into an integer
+
+
 `mov	w19, w0 ; this moves w0 into w19, w0 is the lower 32 bits of x0 (same register lower half), w19 =4110761777`
+
+
 after this we are skipping forward to argument2 and we are adding 8 bytes
 ``` add	x0, x0, 16 ; argument2
 	ldr	x0, [x0] ; x0 = (4110761777) "4004594377" , dont know if the first part in cleared or still there
