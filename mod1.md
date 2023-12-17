@@ -1,4 +1,9 @@
 # mod1
+The challenge asks us to mod37 each number and map it to the given set of charcters
+
+
+Comments in each line to explain the code
+
 ```
 enc = "165 248 94 346 299 73 198 221 313 137 205 87 336 110 186 69 223 213 216 216 177 138 ".split()      #splits the given string into a list
 
