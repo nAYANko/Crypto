@@ -12,3 +12,4 @@ The second cut is important to remove the space as space is invalid in base64 so
 
 ![picoctf-Information](https://github.com/nAYANko/picoCTF/assets/147973815/4a2c9e96-6c7b-4ef4-9ef4-b9986d03d45a)
 
+Flag : "picoCTF{the_m3tadata_1s_modified}" 
