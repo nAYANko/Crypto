@@ -22,7 +22,7 @@ We can also use
 ```
 strings static | grep picoCTF
 ```
-but the challenge was meant to teach us how a basic onject dump does and the above code is actually all it does.
+but the challenge was meant to teach us how a basic object dump does and the above code is actually all it does.
 
 
 
